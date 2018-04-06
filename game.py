@@ -13,3 +13,14 @@ print("Welcome to the stone paper scissor game")
 print("So let's start")
 
 while play_again == 'Y' or play_again == 'y' :
+if track > 0 :
+    time.sleep(1)
+    print("Result")
+    time.sleep(1)
+    if user_score > comp_score :
+        print("You won")
+    else :
+        print("You are a loser")
+    time.sleep(1)
+    print()
+    result = input()
