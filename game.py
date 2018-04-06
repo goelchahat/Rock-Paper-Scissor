@@ -23,4 +23,21 @@ if track > 0 :
         print("You are a loser")
     time.sleep(1)
     print()
-    result = input()
+    result = input("want to see the score [y/n]")
+    if result == 'Y' or result == "Yes" or result == "YES" or result == "yes":
+        print("Your score:", user_score, "\nComputer score:", computer_score)
+
+    else:
+        print("OK!")
+        time.sleep(1)
+    print()
+    print()
+    user_score = 0
+    computer_score = 0
+    computer_gain = 0
+    user_gain = 0
+    play_again = input("Want to play again? (Y/N)")
+    if play_again == 'N' or play_again == "NO" or play_again == "no":
+        break
+    else:
+        pass
